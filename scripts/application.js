@@ -21,8 +21,6 @@ if(!window.App) window.App = {};
 			</div> \
 			\
 			<a href="#" type="button" class="btn btn-info">I want this!</a> \
-			<a href="#" type="button" class="btn btn-info">I want this!</a> \
-
 		</div>');
 
 
@@ -70,12 +68,6 @@ if(!window.App) window.App = {};
 			$productTemplate.find('a').attr('href', 'mailto:yardsale@somedomain.com?subject=' + encodeURIComponent('[Yard sale] ' + title));
 		}
 
-		// If sold, removes the call to action, otherwise add the mailto URL
-		if(status=='sold' || status=='reserved') {
-			$productTemplate.find('a').remove();
-		} else {
-			$productTemplate.find('a').attr('href', 'mailto:yardsale@somedomain.com?subject=' + encodeURIComponent('[Yard sale] ' + title));
-		}
 		
 		// Determines if it's necessary to create another row of products
 		if($productsContainer.children(".box-product").length>=3) {

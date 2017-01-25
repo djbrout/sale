@@ -4,5 +4,5 @@ App.Config = {
 	spreadSheetID: '1ZpG4o5qSoWpP9hXnXQkqQRXR7AK1WxAt88oyRH1qrhw',
 
 	// The public google drive folder ID
-	driveFolderID: '0B-wo61m8bE0Hd1pETGEwS05Wdmc'
+	driveFolderID: '0B2lZl-p7V8zGckxYQlRrcEdOOHc'
 }

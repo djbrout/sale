@@ -55,7 +55,8 @@ if(!window.App) window.App = {};
 
 		// Set the image URL (if exists). Otherwise, deletes the image
 		if(picture) {
-			$productTemplate.find('img').attr('src', 'https://googledrive.com/host/' + App.Config.driveFolderID + '/' + picture)
+			$productTemplate.find('img').attr('src', 'https://drive.google.com/open?id=' + App.Config.driveFolderID + '/' + picture)
+		
 		} else {
 			$productTemplate.find('img').remove();
 		}

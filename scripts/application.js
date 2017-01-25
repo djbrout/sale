@@ -55,7 +55,7 @@ if(!window.App) window.App = {};
 
 		// Set the image URL (if exists). Otherwise, deletes the image
 		if(picture) {
-			$productTemplate.find('img').attr('src','www.dillonbrout.com/salepics/'+picture)
+			$productTemplate.find('img').attr('src',picture)
 		
 		} else {
 			$productTemplate.find('img').remove();

@@ -21,6 +21,8 @@ if(!window.App) window.App = {};
 			</div> \
 			\
 			<a href="#" type="button" class="btn btn-info">I want this!</a> \
+			<a href="#" type="button" class="btn btn-info">I want this!</a> \
+
 		</div>');
 
 

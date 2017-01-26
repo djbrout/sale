@@ -66,7 +66,7 @@ if(!window.App) window.App = {};
 			$productTemplate.find('a').remove();
 		} else {
 			$productTemplate.find('a').attr('href', 
-			'contact-form.html?item=' + encodeURIComponent(title));
+			'contact-form.html?item=' + encodeURIComponent(title) +'&');
 		}
 
 		

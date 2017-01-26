@@ -4,9 +4,7 @@ $myemail = ‘djbrout@gmail.com’;//<——Put Your email address here.
 
 if(empty($_POST['name'])  || 
    empty($_POST['email']) || 
-   empty($_POST['message'])|| 
-   empty($_POST['item'])
-  )
+   empty($_POST['message']))
 {
     $errors .= "\n Error: all fields are required";
 }

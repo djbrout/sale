@@ -65,7 +65,8 @@ if(!window.App) window.App = {};
 		if(status=='sold' || status=='reserved') {
 			$productTemplate.find('a').remove();
 		} else {
-			$productTemplate.find('a').attr('href', 'mailto:yardsale@somedomain.com?subject=' + encodeURIComponent('[Yard sale] ' + title));
+			$productTemplate.find('a').attr('href', 
+			'contact-form.htmll?item=' + encodeURIComponent(title));
 		}
 
 		

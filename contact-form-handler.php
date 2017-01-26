@@ -3,7 +3,9 @@ $errors = '';
 $myemail = ‘djbrout@gmail.com’;//<——Put Your email address here.
 if(empty($_POST['name'])  || 
    empty($_POST['email']) || 
-   empty($_POST['message']))
+   empty($_POST['message'])|| 
+   empty($_POST['item'])
+  )
 {
     $errors .= "\n Error: all fields are required";
 }
@@ -11,6 +13,7 @@ if(empty($_POST['name'])  ||
 $name = $_POST['name']; 
 $email_address = $_POST['email']; 
 $message = $_POST['message']; 
+$item = $_GET['query']
 
 if (!preg_match(
 "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
@@ -25,7 +28,7 @@ if( empty($errors))
 	$email_subject = "Contact form submission: $name";
 	$email_body = "You have received a new message. ".
 	
-	" Here are the details:\n Item: $_GET['query'] \n Name: $name \n Email: $email_address \n Message \n $message"; 
+	" Here are the details:\n Item: $item \n Name: $name \n Email: $email_address \n Message \n $message"; 
 	
 	$headers = "From: $myemail\n"; 
 	$headers .= "Reply-To: $email_address";
